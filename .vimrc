@@ -1,7 +1,7 @@
 " Basic settings
 syntax on
 filetype plugin indent on
-set nocompatible 
+set nocompatible
 set cursorline
 set ttyfast
 set encoding=utf8
@@ -14,7 +14,7 @@ set number
 set noswapfile
 
 " Global tab width.
-set tabstop=2  
+set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
