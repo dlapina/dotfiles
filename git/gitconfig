@@ -1,0 +1,18 @@
+[user]
+	name = Clément Bernet
+	email = clement.bernet7@gmail.com
+[commit]
+	gpgsign = true
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[pager]
+	branch = false
+[gpg]
+	program = gpg
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
