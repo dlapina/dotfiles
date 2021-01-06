@@ -26,14 +26,14 @@ function intro_message() {
   echo "This script will guide you through installing your local development environment"
   echo "Fear not, it will not install anything without asking you first!                "
 
-  green_color; echo; read -p "✨ Shall we proceed with the installation? (Y/N) " -n 1; echo
+  green_color; echo; read -p "✨ Shall we proceed with the installation? (Y/N)" -n 1; echo
   abort_if_prompted $REPLY
 }
 
 function installation_commands() {
   emoji=$1; name=$2; condition=$3;
 
-  blue_color; echo "\n$emoji Trying to detect installed $name..."
+  blue_color; echo "\n$emoji Trying to detect installed stuff $name..."
 
   if ! [[ $(eval $condition) ]]; then
     blue_color; echo "$emoji Looks like we don't have it, but it's needed for our setup."
