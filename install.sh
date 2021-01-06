@@ -6,7 +6,7 @@ function reset_color() { echo "\033[0m\c"; }
 
 function abort_if_prompted() {
   if [[ $1 != "y" ]]; then
-    blue_color; echo "\n🙂 Alright, another time maybe! 👋\n"; reset_color
+    blue_color; echo "\n🙂 Alright, another time maybe! Cya 👋\n"; reset_color
     exit 1
   fi
 }
