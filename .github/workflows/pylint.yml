@@ -1,0 +1,16 @@
+name: Shellcheck
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: |
+        apt-get install -y shellcheck
+        shellcheck --version
+    - name: Analysing the code with Shellcheck
+      run: |
+        shellcheck install.sh
