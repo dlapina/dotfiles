@@ -1,23 +1,14 @@
-" Basic settings
-syntax on
-filetype plugin indent on
 set nocompatible
-set cursorline
-set ttyfast
-set encoding=utf8
-set autoread
-set autoindent
-set backspace=indent,eol,start
-set incsearch
+set background=dark
+set bs=2
 set hlsearch
-set number
-set noswapfile
-
-" Global tab width.
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set noet
+set encoding=utf-8
+set mouse=v
+set ru
+set tabstop=4
+set shiftwidth=4
 set expandtab
-
-" Set to show invisibles (tabs & trailing spaces) & their highlight color
-set list listchars=tab:»\ ,trail:·
+set showcmd
+set showmatch
+set wmnu
